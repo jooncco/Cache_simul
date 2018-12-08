@@ -18,7 +18,8 @@ typedef unsigned long long ull;
 #define N_WAY      1        /* Associativity level */
 
 #define N_BLOCKS   CACHE_SIZE*1024/(WORD_SIZE*BLOCK_SIZE)    // # of blocks in cache
-const char* TERMINATE = "FFFFFFFF";
+const char* TERMINATE1 = "FFFFFFFF";
+const char* TERMINATE2 = "ffffffff";
 /*****************************************/
 
 

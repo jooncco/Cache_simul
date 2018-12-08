@@ -1,0 +1,270 @@
+=================[ REPORT # 1 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  1 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1458598 time(s)
+  HIT rate: 74.50 %
+  AMAT(Average Memory Access Time): 6949435.00 cycle(s)
+=================================================
+
+=================[ REPORT # 2 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  1 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1464931 time(s)
+  HIT rate: 74.83 %
+  AMAT(Average Memory Access Time): 7574715.50 cycle(s)
+=================================================
+
+=================[ REPORT # 3 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  1 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1468560 time(s)
+  HIT rate: 75.01 %
+  AMAT(Average Memory Access Time): 8219778.00 cycle(s)
+=================================================
+
+=================[ REPORT # 4 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  4 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1638812 time(s)
+  HIT rate: 83.71 %
+  AMAT(Average Memory Access Time): 6104154.00 cycle(s)
+=================================================
+
+=================[ REPORT # 5 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  4 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1655477 time(s)
+  HIT rate: 84.56 %
+  AMAT(Average Memory Access Time): 6476259.90 cycle(s)
+=================================================
+
+=================[ REPORT # 6 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size:  4 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1655477 time(s)
+  HIT rate: 84.56 %
+  AMAT(Average Memory Access Time): 7065010.80 cycle(s)
+=================================================
+
+=================[ REPORT # 7 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size: 16 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 64 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1793421 time(s)
+  HIT rate: 91.61 %
+  AMAT(Average Memory Access Time): 6066365.00 cycle(s)
+=================================================
+
+=================[ REPORT # 8 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size: 16 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 64 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1859498 time(s)
+  HIT rate: 94.98 %
+  AMAT(Average Memory Access Time): 4855884.00 cycle(s)
+=================================================
+
+=================[ REPORT # 9 ]=================
+
+ - CACHE Info.
+  size:  4 KB
+  block size: 16 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 64 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1860164 time(s)
+  HIT rate: 95.01 %
+  AMAT(Average Memory Access Time): 5277348.00 cycle(s)
+=================================================
+
+=================[ REPORT # 10 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  1 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 4096 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1467818 time(s)
+  HIT rate: 74.97 %
+  AMAT(Average Memory Access Time): 6857235.00 cycle(s)
+=================================================
+
+=================[ REPORT # 11 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  1 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 4096 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1469504 time(s)
+  HIT rate: 75.06 %
+  AMAT(Average Memory Access Time): 7524412.50 cycle(s)
+=================================================
+
+=================[ REPORT # 12 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  1 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 4096 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1482727 time(s)
+  HIT rate: 75.74 %
+  AMAT(Average Memory Access Time): 8049774.00 cycle(s)
+=================================================
+
+=================[ REPORT # 13 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  4 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1651380 time(s)
+  HIT rate: 84.35 %
+  AMAT(Average Memory Access Time): 5940770.00 cycle(s)
+=================================================
+
+=================[ REPORT # 14 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  4 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1655477 time(s)
+  HIT rate: 84.56 %
+  AMAT(Average Memory Access Time): 6476259.90 cycle(s)
+=================================================
+
+=================[ REPORT # 15 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size:  4 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 1024 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1656449 time(s)
+  HIT rate: 84.61 %
+  AMAT(Average Memory Access Time): 7049847.60 cycle(s)
+=================================================
+
+=================[ REPORT # 16 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size: 16 WORD(s)
+  associativity:  1 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1843841 time(s)
+  HIT rate: 94.18 %
+  AMAT(Average Memory Access Time): 4805865.00 cycle(s)
+=================================================
+
+=================[ REPORT # 17 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size: 16 WORD(s)
+  associativity:  2 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1860164 time(s)
+  HIT rate: 95.01 %
+  AMAT(Average Memory Access Time): 4837569.00 cycle(s)
+=================================================
+
+=================[ REPORT # 18 ]=================
+
+ - CACHE Info.
+  size: 16 KB
+  block size: 16 WORD(s)
+  associativity:  4 way(s)
+  # of blocks: 256 blocks
+
+ - PERFORMANCE
+  # of instructions read: 1957765 WORD(s)
+  HIT: 1860384 time(s)
+  HIT rate: 95.03 %
+  AMAT(Average Memory Access Time): 5270748.00 cycle(s)
+=================================================
+

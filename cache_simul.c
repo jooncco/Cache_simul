@@ -41,7 +41,7 @@ void run() {
         }
 
         // if the operation WORD is "FFFFFFFF", print the report and terminate.
-        if ( !strcmp( op , TERMINATE ) ) { print_report(); break; }
+        if ( !strcmp( op , TERMINATE1 ) || !strcmp( op , TERMINATE2 ) ) { print_report(); break; }
     }
 
     /* close file */
@@ -170,13 +170,28 @@ void place_block(unsigned cur_tag, unsigned cur_idx, ull cur_cycle) {
 void print_report() {
 
     /* file open */
-    FILE *fd = fopen(OUT_PATH,"r");
+    FILE *fd = fopen(OUT_PATH,"a");
     if (fd == NULL) {
         printf("[ERROR] file open error. (OUT)\n");
         exit(EXIT_FAILURE);
     }
 
-    fprintf (fp, "This is line\n",);
+    double hit_ratio = (double)n_hit/(double)n_op*100;
+    double amat = total_cycle;
+    if ( N_WAY == 2 ) amat *= 1.1;
+    else if ( N_WAY == 4 ) amat *= 1.2;
+    fprintf (fd, "=================[ REPORT #%2d ]=================\n\n", 1);
+    fprintf (fd, " - CACHE Info.\n");
+    fprintf (fd, "  size: %2d KB\n", CACHE_SIZE);
+    fprintf (fd, "  block size: %2d WORD(s)\n", BLOCK_SIZE);
+    fprintf (fd, "  associativity: %2d way(s)\n", N_WAY);
+    fprintf (fd, "  # of blocks: %d blocks\n\n", N_BLOCKS);
+    fprintf (fd, " - PERFORMANCE\n");
+    fprintf (fd, "  # of instructions read: %llu WORD(s)\n", n_op);
+    fprintf (fd, "  HIT: %3d time(s)\n", n_hit);
+    fprintf (fd, "  HIT rate: %.2f %%\n", hit_ratio);
+    fprintf (fd, "  AMAT(Average Memory Access Time): %.2f cycle(s)\n", amat);
+    fprintf (fd, "=================================================\n\n");
 
     /* close file */
     fclose(fd);
