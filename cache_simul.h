@@ -4,11 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
+#include <stdbool.h>
 #include <math.h>
-typedef long long ll;
+typedef unsigned long long ull;
 
 /**************** CONFIG ****************/
-#define FILE_PATH "./ART.txt"
+#define INPUT_PATH "./ART.txt"
+#define OUT_PATH   "./report.txt"
 #define WORD_SIZE  4        /* WORD size in Bytes */
 #define CACHE_SIZE 4        /* Cache size in KBs */
 #define BLOCK_SIZE 1        /* Block size in WORDs */
@@ -20,29 +23,32 @@ const char* TERMINATE = "FFFFFFFF";
 
 
 
-
-
 /************ globals ************/
 // Common
-unsigned LEN_BLOCK_OFFSET, LEN_BLOCK_IDX, LEN_TAG, LEN_OP;
-int      tag[N_BLOCKS]={0};
-int      n_hit=0, n_miss=0;
-int      n_op=0;
-ll       total_cycle=0;
+unsigned LEN_OP, LEN_TAG, LEN_BLOCK_IDX, LEN_BLOCK_OFFSET;  // sub-division info
+unsigned tag[N_WAY][N_BLOCKS]={0};
+unsigned v[N_WAY][N_BLOCKS]  ={0};
+ull      n_hit=0, n_miss=0;
+ull      n_op=0;
+ull      total_cycle=0;
 
 // LRU
+ull      updated[N_WAY][N_BLOCKS]={0};
 
 /*********************************/
 
 /************ utils ************/
 // Common
-void config_();
-int get_tag(char* op);
-int get_blk_idx(char* op);
-int get_blk_offset(char* op);
-void print_report();
+void      config_();
+ull       hex_to_long(char* hex);
+unsigned  get_tag(char* op);
+unsigned  get_blk_idx(char* op);
+unsigned  get_blk_offset(char* op);
+void      print_report();
 
 // LRU
+bool      find_blk(unsigned cur_tag, unsigned cur_idx, ull cur_cycle);
+void      place_block(unsigned cur_tag, unsigned cur_idx, ull cur_cycle);
 
 /******************************/
 
