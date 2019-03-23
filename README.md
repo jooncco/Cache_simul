@@ -1,2 +1,2 @@
 # cache_simul
-Cache simulation module.
+Simple simulation program in C for comparing <b> cache performance </b> depending on ways, associativity, memory size.
